@@ -25,15 +25,27 @@ const show_toast = (background, toast_header, icon, toast_message, delay) => {
   ).show();
 }
 
+document.getElementById("success").onclick = function() {toast_event()};
+function toast_event() {
+  show_toast(
+    '#FCBF4A',
+    'ERROR', 
+    '<i class="bi bi-exclamation-triangle-fill" style="font-size: 45px; color:#FFE500"></i>',
+    ' An error occur!',
+    1500
+  );
+}
 
-/*document.getElementById("validate").onclick = function() {toast_event()};*/
+
+
+/*document.getElementById("validate").onclick = function() {toast_event()};
 document.getElementById("validate").addEventListener("click",toast_event)
 
 function toast_event(e){
     e.preventDefault();
     
     const studentId = document.getElementById("studid").value;
-    const studentId2 = '12-3456' /* ID from Database */
+    const studentId2 = '12-3456' /* ID from Database 
     
     if(studentId == ''){
         show_toast(
