@@ -1,2 +1,2 @@
 # SPAID
-School Portal for Accommodating Information Dissemination
+School Portal for Accommodating Information Disseminationjkafjhrkbspigrwbrbewlrwerwer
