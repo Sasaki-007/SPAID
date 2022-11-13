@@ -30,7 +30,7 @@ function toast_event() {
   show_toast(
     '#FCBF4A',
     'ERROR', 
-    '<i class="bi bi-exclamation-triangle-fill" style="font-size: 45px; color:#FFE500"></i>',
+    '<i class="bi bi-exclamation-triangle-fill" stylegit="font-size: 45px; color:#FFE500"></i>',
     ' An error occur!',
     1500
   );
