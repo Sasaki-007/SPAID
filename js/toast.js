@@ -25,8 +25,8 @@ const show_toast = (background, toast_header, icon, toast_message, delay) => {
   ).show();
 }
 
-document.getElementById("success").onclick = function() {toast_event()};
-function toast_event() {
+document.getElementById("error").onclick = function() {error_event()};
+function error_event() {
   show_toast(
     '#FCBF4A',
     'ERROR', 
@@ -35,7 +35,26 @@ function toast_event() {
     1500
   );
 }
-
+document.getElementById("failed").onclick = function() {failed_event()};
+function failed_event() {
+  show_toast(
+    '#D72729',
+    'FAILED', 
+    '<i class="bi bi-x-circle-fill" style="font-size: 45px; color:#D72729"></i>',
+    ' Account activation request failed!',
+    1500
+  );
+}
+document.getElementById("success").onclick = function() {success_event()};
+function success_event() {
+  show_toast(
+    '#00BE35',
+    'SUCCESS', 
+    '<i class="bi bi-check-circle-fill" style="font-size: 45px; color:#00BE35"></i>',
+    ' Account activation request sent successfully!',
+    1500
+  );
+}
 
 
 /*document.getElementById("validate").onclick = function() {toast_event()};
@@ -74,4 +93,4 @@ function toast_event(e){
             );
         }
     }
-}
+}*/
