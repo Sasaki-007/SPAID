@@ -4,6 +4,9 @@
     margin: 0px;
     padding: 0px
 }
+.profile{
+    width: inherit;
+}
 .logo{
     width: 115px;
 }
@@ -34,6 +37,14 @@
     font-weight: bolder;
     top: 5vh;
     right: 2vw;
+}
+.vacine{
+    position: absolute;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    top: 5vh;
+    left: 2vw;
 }
 .student{
     position: absolute;
