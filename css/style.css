@@ -27,6 +27,15 @@
     font-size: 2vw;
     font-weight: bolder;
 }
+.profile{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+
+
+
 .welcome{
     position: absolute;
     color: white;
