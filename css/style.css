@@ -1,10 +1,27 @@
-@import url(https://fonts.googleapis.com/css?family=Inter);
+/*@import url(https://fonts.googleapis.com/css?family=Inter);*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
 
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     margin: 0px;
     padding: 0px
 }
+.color-1{
+  color: rgba(215, 39, 41, 1);
+}
+.color-2{
+  color: rgba(252, 191, 74, 1);
+}
+.color-3{
+  color: rgba(0, 102, 255, 1);
+}
+.color-4{
+  color: rgb(0, 47, 73, 1);
+}
+.qoute{
+  font-size: calc(5.5rem + 1vw);
+}
+
 .profile{
     width: inherit;
 }
@@ -17,12 +34,14 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    position: relative;
-    width: 75%;
     border: 4px solid #002F49;
     box-shadow: -11px 11px 4px rgba(0, 0, 0, 0.25);   
     border-radius: 73px 0px 73px 73px;
     overflow: hidden;
+}
+.login-size{
+  width: 75%;
+  position: relative;
 }
 .login{
     background-color: white;
@@ -30,18 +49,13 @@
     height: 30rem;
 }
 .sign-in{
-    font-size: 2.75rem;
-    font-weight: bolder;
+    font-size: 2.7rem;
 }
 .profile{
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
 }
-
-
-
-
 .welcome{
     position: absolute;
     color: white;
@@ -90,16 +104,13 @@
 a:hover{
     color: gray !important;
 }
-
-.modal-body{
-    padding: 8%;
-}
 .form-field{
     width: 100%;
     height: 48px !important;
     padding: 10px;
     border: 1px solid #000000 !important;
     border-radius: 15px !important;
+    font-weight: 400 !important;
 }
 .acc-activation{
     position: relative;
@@ -113,7 +124,6 @@ a:hover{
     text-align: center;
     
 }
-
 
 
 /*Pre loader*/
