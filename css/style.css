@@ -19,7 +19,8 @@
     background-size: contain;
     position: relative;
     width: 75%;
-    border: 2px solid rgb(0, 47, 73);
+    border: 4px solid #002F49;
+    box-shadow: -11px 11px 4px rgba(0, 0, 0, 0.25);   
     border-radius: 73px 0px 73px 73px;
     overflow: hidden;
 }
