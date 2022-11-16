@@ -31,7 +31,7 @@ function error_event() {
     '#FCBF4A',
     'ERROR', 
     '<i class="fas fa-exclamation-triangle" style="font-size: 45px; color:#FFE500;"></i>',
-    ' An error occur!'
+    'An error occur!'
   );
 }
 document.getElementById("failed").onclick = function() {failed_event()};
@@ -40,7 +40,7 @@ function failed_event() {
     '#D72729',
     'FAILED', 
     '<i class="fas fa-times-circle" style="font-size: 45px; color:#D72729"></i>',
-    ' Account activation request failed!'
+    'Account activation request failed!'
   );
 }
 document.getElementById("success").onclick = function() {success_event()};
@@ -49,7 +49,7 @@ function success_event() {
     '#00BE35',
     'SUCCESS', 
     '<i class="fas fa-check-circle" style="font-size: 45px; color:#00BE35"></i>',
-    ' Account activation request sent successfully!'
+    'Account activation request sent successfully!'
   );
 }
 
