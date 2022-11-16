@@ -1,4 +1,5 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
 *{
     font-family: 'Inter', sans-serif;
     margin: 0px;
@@ -8,7 +9,8 @@
     width: inherit;
 }
 .logo{
-    width: 115px;
+    width: 100px;
+    border-radius: 50%;
 }
 .login-container{
     background-image: url(https://i.ibb.co/zRswhcb/Mask-group.png);
@@ -17,7 +19,7 @@
     background-size: contain;
     position: relative;
     width: 75%;
-    border: 2px solid navy;
+    border: 2px solid rgb(0, 47, 73);
     border-radius: 73px 0px 73px 73px;
     overflow: hidden;
 }
@@ -27,7 +29,7 @@
     height: 30rem;
 }
 .sign-in{
-    font-size: 2vw;
+    font-size: 2.75rem;
     font-weight: bolder;
 }
 .profile{
@@ -66,21 +68,19 @@
     border-radius: 10px;
 }
 .btn-sub-1{
-    background: #274C77;
-    color: #ffffff;
+    background: #FCBF4A;
+    color: #000;
 }
 .btn-sub-1:hover{
-    color: #000000;
-    background: #ffffff;
-    border-color: #274C77;
+    color: #fff;
+    background: #F67F00;
 }
 .btn-sub-2{
-    color: #000000;
-    background: #ffffff;
-    border-color: #274C77;
+    color: #fff;
+    background: #D72729;
 }
 .btn-sub-2:hover{
-    background: #274C77;
+    background: #D46A6B;
     color: #ffffff;
 }
 .activate{
