@@ -16,20 +16,9 @@
             border-radius: 1rem;
         }
         .flex-container {
-            /* We first create a flex layout context */
             display: flex;
-            
-            /* Then we define the flow direction 
-               and if we allow the items to wrap 
-             * Remember this is the same as:
-             * flex-direction: row;
-             * flex-wrap: wrap;
-             */
             flex-flow: row wrap;
-            
-            /* Then we define how is distributed the remaining space */
             justify-content: space-around;
-            
             padding: 0;
             margin: 0;
             list-style: none;
@@ -38,9 +27,9 @@
           .flex-item {
             background: tomato;
             padding: 5px;
-            width: 200px;
+            width: 5rem;
             height: 150px;
-            margin-top: 10px;
+            margin: 2rem;
             line-height: 150px;
             color: white;
             font-weight: bold;
@@ -102,6 +91,7 @@
         </nav>
     </div>
     <!--End of Navbar-->
+    <!--Start-->
     <div class="container">
         <div class="text-center">
             <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" alt="profile" class="card-img" style="width: 100px;"/>
@@ -110,6 +100,8 @@
         </div>
         <div class="border-cus"></div>
     </div>
+    <!--End-->
+    <!--Start-->
     <div class="container">
         <ul class="flex-container">
             <li class="flex-item">
@@ -118,12 +110,53 @@
                 </i>
             </li>
             <li class="flex-item">
-                <i class="fa-solid fa-file-invoice">
+                <i class="fa-solid fa-clipboard">
                     <h4>Pre- Enrollment</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-regular fa-clock">
+                    <h4>Schedule</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-circle-down">
+                    <h4>Drop Subject</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-id-card">
+                    <h4>Library ID-CARD</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-calendar-days">
+                    <h4>QCU Calendar</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-table-list">
+                    <h4>Gradeslip</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-check">
+                    <h4>Curriculum Evaluation</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-regular fa-file-lines">
+                    <h4>Requested Documents</h4>
+                </i>
+            </li>
+            <li class="flex-item">
+                <i class="fa-solid fa-credit-card">
+                    <h4>Vaccination Record</h4>
                 </i>
             </li>
         </ul>
     </div>
+    <!--End-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
