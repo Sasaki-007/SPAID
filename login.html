@@ -4,51 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mobile.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/fontawesome-free-6.2.0-web/css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.css" type="text/css">
     <title>Login</title>
 </head>
 <body>
         <!--Start Navbar-->
-        <div class="container">
-            <nav class="navbar">
-            <div class="col-4">
-                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" alt="logo" class="logo">
-                <strong class="text-white fs-5">QUEZON CITY UNIVERSITY</strong>
+        <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+            <div class="container">
+                <img src="img/QCU_Logo_2019 1.png" class="logo">
+                <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav ms-auto fw-bolder">
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link text-body" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link text-body" href="aboutus.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link text-body" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-8">
-                <ul class="nav justify-content-end fw-bolder ">
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="aboutus.html">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            </nav>
-        </div>
+        </nav>
         <!--End of Navbar-->
     
     <!--Start of Login-->
     <div class="container d-flex justify-content-center">
-        <div class="login-container login-size">
+        <div class="login-container cus-container-size">
             <span class="welcome">Welcome back!</span>
             <div class="login d-flex justify-content-center align-middle">
-                <form action="" class="text-center justify-content-center " style="display: flex; width: 400px; flex-direction: column; position: relative">
+                <form action="stud-dashboard.html" class="text-center justify-content-center " style="display: flex; width: 400px; flex-direction: column; position: relative">
                     <div class="mt-3">
                         <strong class="sign-in">Sign in to Account</strong>
                     </div>
                     <div class="mt-3">
-                        <input type="text" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Student Number">
+                        <input type="text" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Student Number" required>
                     </div>
                     <div class="mt-3">
-                        <input type="password" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Password">
+                        <input type="password" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required>
                         <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
                     </div>
                     <div class="mt-3 text-sm-start">
@@ -57,7 +58,8 @@
                     </div>
                 </form>
             </div>
-            <img src="https://i.ibb.co/FYz2tkc/Untitled-design-1-1.png" alt="Student" class="student">
+            <img src="img/side-login.jpg" alt="side" class="side-login-back">
+            <img src="img/s2.png" alt="Student" class="student">
         </div>
     </div>
     <!--End of Login-->

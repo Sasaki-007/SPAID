@@ -12,27 +12,29 @@
 </head>
 <body  style="background-color: #002F49;">
     <!--Start Navbar-->
-    <div class="container">
-        <nav class="navbar">
-            <div class="col-4">
-                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQH8BWYpK3eVPg/company-logo_200_200/0/1565034397472?e=2159024400&amp;v=beta&amp;t=_627mJ5hqrZvhCN-XAEPpZtsX4XK5Zvx1kwocSYmzRM" alt="logo" class="logo">
-                <strong class="text-white fs-5">QUEZON CITY UNIVERSITY</strong>
-            </div>
-            <div class="col-8">
-                <ul class="nav justify-content-end fw-bolder ">
-                    <li class="nav-item">
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+        <div class="container">
+            <img src="img/QCU_Logo_2019 1.png" class="logo">
+            <strong class="text-white fs-5">&nbsp; QUEZON CITY UNIVERSITY</strong>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto fw-bolder">
+                    <li class="nav-item align-self-center">
                         <a class="nav-link text-white" href="index.html">HOME</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item align-self-center">
                         <a class="nav-link text-white" href="aboutus.html">ABOUT US</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item align-self-center">
                         <a class="nav-link text-white" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!--End of Navbar-->
     <!--Start landing page-->
     <div class="container" style="height: 90vh; position: relative;">
@@ -46,7 +48,8 @@
             </strong>
             <h4 class="text-white">Quezon City University (QCU), formerly known as Quezon City Polytechnic University (QCPU), is a city government-funded university in Quezon City, Philippines.</h4>
             <br/>
-            <button class="btn btn-sub-1 btn-lg input-group" data-bs-toggle="modal" data-bs-target="#myModal"><strong>START YOUR JOURNEY</strong></button>          
+            <a class="btn btn-sub-1 btn-lg input-group" href="login.html"><strong>START YOUR JOURNEY</strong></a>
+            <!--<button class="btn btn-sub-1 btn-lg input-group" data-bs-toggle="modal" data-bs-target="#myModal"><strong>START YOUR JOURNEY</strong></button>-->          
         </div>
         <img src="https://i.ibb.co/djFYtCs/Untitled-design-1.png" alt="Student" style="position: absolute; display: flex; bottom: 0; right: 0; z-index: -10;">
     </div>

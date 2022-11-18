@@ -10,18 +10,6 @@
     <link rel="stylesheet" href="css/fontawesome-free-6.2.0-web/css/all.css" type="text/css">
     <title>Vaccine</title>
     <style>
-        .vaccine-card{
-            background-color: #D9D9D9;
-            text-align: center;
-            padding: 5px;
-        }
-        .vaccine-img{
-            width: 50%;
-        }
-        .btn-container{
-            text-align: right;
-            margin-top: 15px;
-        }
         .icon{
             text-align: right;
         }
@@ -31,19 +19,48 @@
         }
         .text{
             text-align: center;
-            font-weight: 700;
+            font-weight: 400;
             color: #002F49;
-            font-size: clamp(min(2vw, 1rem), 200px, max(4vw, 2rem));;
+            font-size: clamp(min(.5vw, .2rem), 80px, max(1.5vw, .7rem));
+            margin: 5px;
         }
         .border-cus{
             background-color: #F67F00;
             border: 0.2rem solid #F67F00;
             border-radius: 1rem;
+            margin: 10px;
         }
-        .msg{
-            margin: 10px 10px 10px 0px;
+        .vaccine-container{
+            background-image: url(img/side-med.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            box-shadow: 11px 11px 4px rgba(0, 0, 0, 0.25);   
+            border-radius: 73px 73px 73px 0px;
+            overflow: hidden;
         }
-
+        .med{
+            position: absolute;
+            color: white;
+            font-size: 2.3rem;
+            font-weight: bolder;
+            width: 245px;
+            top: 5vh;
+            left: 2vw;
+            text-align: center;
+        }
+        .vac-form{
+            background-color: white;
+            width: 60%;
+            height: 30rem;
+            float: right;
+        }
+        .med-img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 22rem;
+        }
     </style>
 </head>
 <body>
@@ -89,16 +106,31 @@
     <!--End of Navbar-->
     <div class="container">
         <div class="icon"><a href="#"><i class="fa-solid fa-circle-question"></i></a></div>
-        <div class="text">VACCINATION CARD</div>
+        <div class="text">Kindly upload your vaccination card and fill up the form stated below.</div>
         <div class="border-cus"></div>
     </div>
-    <div class="container">
-        <!--<div class="msg"><span class="text-success">SUCCESS.</span></div>-->
-        <div class="vaccine-card">
-            <img src="https://news.harvard.edu/wp-content/uploads/2021/12/iStock-vaccine-card-900x600.jpg" alt="vaccine card" class="vaccine-img">
-        </div>
-        <div class="btn-container">
-            <button class="btn btn-sub-1 btn-shadow fw-bolder">OK</button>
+    <div class="container d-flex justify-content-center">
+        <div class="vaccine-container cus-container-size">
+            <span class="med">Health and Safety form</span>
+            <div class="vac-form d-flex justify-content-center align-middle">
+                <form action="stud-dashboard.html" class="text-center justify-content-center " style="display: flex; width: 400px; flex-direction: column; position: relative">
+                    <div class="mt-3">
+                        <strong class="sign-in">Sign in to Account</strong>
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Student Number" required>
+                    </div>
+                    <div class="mt-3">
+                        <input type="password" name="" id="" class="form-field form-control form-control-lg form-control-sm" placeholder="Password" required>
+                        <a href="#" class="text-decoration-none float-end text-body fw-bolder">Forget password?</a>
+                    </div>
+                    <div class="mt-3 text-sm-start">
+                        <button type="submit" class="btn btn-sub-1 btn-shadow input-group" id="success"><strong>SIGN IN</strong></button>
+                        <span class="activate">Account not yet activated?</span><a href="#" class="text-decoration-none text-body fw-bolder" data-bs-toggle="modal" data-bs-target="#myModal">Click here.</a>
+                    </div>
+                </form>
+            </div>
+            <img src="img/med.png" alt="medical" class="med-img">
         </div>
     </div>
 

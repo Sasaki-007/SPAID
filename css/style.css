@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
 
 *{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     margin: 0px;
     padding: 0px
 }
@@ -30,16 +30,22 @@
     border-radius: 50%;
 }
 .login-container{
-    background-image: url(https://i.ibb.co/zRswhcb/Mask-group.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    border: 4px solid #002F49;
+    border: 3px solid #002F49;
     box-shadow: -11px 11px 4px rgba(0, 0, 0, 0.25);   
     border-radius: 73px 0px 73px 73px;
     overflow: hidden;
+    height: 30rem;
 }
-.login-size{
+.side-login-back{
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:inherit;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -10;
+}
+.cus-container-size{
   width: 75%;
   position: relative;
 }
@@ -87,7 +93,7 @@
     color: #000;
 }
 .btn-sub-1:hover{
-    color: #fff;
+    color: #fff !important;
     background: #F67F00;
 }
 .btn-sub-2{
@@ -122,7 +128,45 @@ a:hover{
 .title{
     width: 100%;
     text-align: center;
-    
+}
+.border-cus{
+  background-color: #F67F00;
+  border: 0.2rem solid #F67F00;
+  border-radius: 1rem;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.flex-item a{
+  background: #FCBF4A;
+  padding: 5px;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  line-height: 150px;
+  color: #002f49;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  border-radius: 1rem;
+  box-shadow: 9px 12px 4px rgba(0, 0, 0, 0.42);
+}
+.flex-item a:hover{
+  background-color: #F67F00;
+  color: white !important;
+}
+.dropdown-item:hover{
+  color: red !important;
 }
 
 
